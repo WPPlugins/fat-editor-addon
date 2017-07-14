@@ -1,0 +1,73 @@
+a.fat-twitter{
+    display: inline-block;
+    line-height: 1.4;
+}
+a.fat-twitter,
+a.fat-twitter:hover{
+    box-shadow: none !important;
+    background-color: transparent !important;
+    border-bottom: none !important;
+}
+a.fat-twitter span,
+a.fat-twitter:hover span{
+    color: #00D1FE !important;
+}
+a.fat-highlight{
+    box-shadow: none !important;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+a.fat-highlight:hover{
+    border-bottom: none !important;
+}
+a.fat-highlight:focus,
+a.fat-highlight:active{
+    background-color: transparent !important;
+}
+
+.fat-image,
+.fat-image-inner{
+    position: relative;
+}
+.fat-image-inner{
+    display: inline-block;
+}
+.fat-image-inner img{
+    max-width: 100%;
+}
+.fat-image .fat-pinterest{
+    position: absolute;
+    top:10px;
+    right: 10px;
+    font-size: 30px;
+    border-radius: 4px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    color: #cb2027;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+    display: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.fat-image .fat-image-inner:hover .fat-pinterest{
+    display: inline-block;
+}
+div.text-center{
+    text-align: center;
+}
+div.text-right{
+    text-align: right;
+}
+

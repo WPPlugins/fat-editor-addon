@@ -1,0 +1,239 @@
+/** shortcode popup **/
+.fat-sc-video-button .fat-cmb-select{
+    opacity: 1 !important;
+}
+.fat-sc-video-button .fat-shortcode-popup{
+    padding: 15px 20px;
+    max-height: 400px;
+}
+.fat-sc-video[data-type="vimeo"] .fat-sc-video-icon.icon-loading{
+    display: none !important;
+}
+.fat-shortcode-popup{
+    overflow-y: scroll;
+}
+.fat-sc-popup-dialog{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    z-index: 9999;
+}
+.fat-sc-popup-dialog .fat-sc-popup-inner{
+    width: 900px;
+    max-height: 90%;
+    position: absolute;
+    overflow-y: auto;
+    /*top: 50%;*/
+    top: 70px;
+    left: 50%;
+    /*transform: translateX(-50%)translateY(-50%);*/
+    transform: translateX(-50%);
+    background-color: #fff;
+    overflow: hidden;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.7);
+}
+.fat-sc-popup-dialog .fat-sc-popup-title{
+    background-color: #f1f1f1;
+    padding: 8px 15px;
+    position: relative;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+.fat-sc-popup-dialog .fat-sc-popup-close-icon{
+    position: absolute;
+    right: 10px;
+    top: 6px;
+    color: #343434;
+    font-size: 16px;
+}
+.fat-sc-popup-dialog .fat-sc-popup-close-icon:active,
+.fat-sc-popup-dialog .fat-sc-popup-close-icon:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+.fat-sc-popup-dialog .fat-sc-popup-content{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.fat-sc-popup-footer{
+    width: 100%;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    text-align: right;
+    border-top: solid 1px #eee;
+}
+.fat-sc-popup-footer a.fat-sc-popup-bt-cancel,
+.fat-sc-popup-footer a.fat-sc-popup-bt-insert{
+    padding: 6px 20px;
+    background-color: #0073aa;
+    border-radius: 4px;
+    color: #fff;
+    letter-spacing: 1.5px;
+    margin-left: 5px;
+    cursor: pointer;
+    display: inline-block;
+}
+.fat-sc-popup-content .fat-cmb-editor-wrap textarea{
+    opacity: 0;
+}
+
+/** shortcode field **/
+.fat-shortcode-popup label{
+    width: 200px;
+    display: inline-block;
+    float: left;
+}
+.fat-shortcode-popup .fat-cmb-field,
+.fat-shortcode-popup .fat-cmb-editor-wrap[data-inline="1"] .fat-cmb-field{
+    width: calc(100% - 250px);
+    display: inline-block;
+}
+.fat-shortcode-popup .fat-cmb-editor-wrap .fat-cmb-field{
+    width: 100%;
+}
+.fat-shortcode-popup .fat-cmb-field input[type="text"]{
+    -webkit-border-radius:0px;
+    -moz-border-radius:0px;
+    border-radius:0px;
+    line-height: 1;
+    padding: 5px 10px;
+}
+.fat-shortcode-popup .fat-cmb-field input[type="number"]{
+    width: 80px;
+}
+
+.fat-shortcode-popup .fat-cmb-check-wrap .fat-cmb-field ul{
+    width: 100%;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.fat-shortcode-popup .fat-cmb-check-wrap .fat-cmb-field ul li,
+.fat-shortcode-popup .fat-cmb-radio-wrap .fat-cmb-field ul li{
+    display: inline-block;
+    padding-right: 15px;
+}
+.fat-shortcode-popup .fat-cmb-field-wrap{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: solid 1px #eee;
+}
+
+.fat-shortcode-popup .fat-cmb-color-wrap .wp-picker-container{
+    margin-left: 0px;
+}
+
+.fat-cmb-field input[type="text"], .fat-cmb-field textarea{
+    width: 100%;
+}
+.fat-cmb-description{
+    display: block;
+    clear: both;
+    color: #ddd;
+    font-style: inherit;
+}
+/** Image **/
+
+.fat-cmb-images-wrap label,
+.fat-cmb-images-wrap .fat-add-image-wrap,
+.fat-cmb-images-wrap .fat-add-single-image-wrap{
+    float: left;
+}
+
+.fat-cmb-images-wrap .fat-add-single-image-wrap,
+.fat-cmb-images-wrap .fat-add-image-wrap{
+    float: left;
+    display: inline-block;
+
+}
+
+.fat-cmb-images-wrap .fat-add-image-wrap{
+    padding: 15px;
+    box-sizing: border-box;
+    border: dashed 1px #ccc;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.fat-cmb-images-wrap .fat-add-image,
+.fat-cmb-images-wrap .fat-add-single-image{
+    background-color: #f1f1f1;
+    text-align: center;
+    line-height: 145px;
+    text-decoration: none;
+}
+
+.fat-cmb-images-wrap .fat-add-image,
+.fat-cmb-images-wrap .fat-add-single-image,
+.fat-cmb-images-wrap .fat-image-thumb {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    float: left;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+}
+
+.fat-cmb-images-wrap .fat-image-thumb {
+    overflow: hidden;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    text-align: center;
+}
+.fat-cmb-images-wrap .fat-image-thumb img{
+    top:50%;
+    position: relative;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.fat-overlay {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.fat-cmb-images-wrap .fat-image-thumb:hover .fat-overlay {
+    opacity: 1;
+    cursor: move;
+}
+
+.fat-overlay,
+.fat-delete-image,
+.fat-delete-single-image{
+    position: absolute;
+}
+
+.fat-delete-image,
+.fat-delete-single-image,
+.fat-delete-image:hover,
+.fat-delete-single-image:hover{
+    right: 10px;
+    top: 5px;
+    color: #fff;
+    text-decoration: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.fat-delete-image i,
+.fat-delete-single-image i{
+    font-size: 25px;
+}
